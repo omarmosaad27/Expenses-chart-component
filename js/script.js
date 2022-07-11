@@ -3,7 +3,7 @@
 let bars = document.querySelector(".bars")
 
 window.addEventListener("load",  async function () {
-    const response = await fetch("../data.json")
+    const response = await fetch("../data.js")
     const data = await response.json()
     const items = data.map((item) => {
         console.log(Math.max(...data.map(e => e.amount)));
