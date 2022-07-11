@@ -1,10 +1,10 @@
 
-
+import data from '../data.js'
 let bars = document.querySelector(".bars")
 
-window.addEventListener("load",  async function () {
-    const response = await fetch("../data.js")
-    const data = await response.json()
+window.addEventListener("load",   function () {
+    // const response = await fetch("../data.json")
+    // const data = await response.json()
     const items = data.map((item) => {
         console.log(Math.max(...data.map(e => e.amount)));
         const bar = `
